@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 final AssetImage kcatImage =AssetImage('assets/a.png');
 
+int score=0;
+
 List<bool> showCatList = [
   true,
   false,
