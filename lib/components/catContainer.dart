@@ -17,14 +17,14 @@ class CatContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(3.0),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 300),
-        height: deviceHeight * .14,
-        width: deviceWidth * .23,
+        height: deviceHeight * .09,
+        width: deviceWidth * .12,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: showCat ? Colors.yellow : Colors.transparent,
+          color: showCat ? Colors.transparent : Colors.transparent,
         ),
         child: AnimatedOpacity(
           duration: Duration(milliseconds:400),
@@ -33,6 +33,7 @@ class CatContainer extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
             color: Colors.transparent,
             child: InkWell(
+              customBorder: CircleBorder(),
               child: CircleAvatar(
                   backgroundColor: Colors.transparent,
                   
